@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eostoken.opensdk">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.eostoken.opensdk.simple.ETAssistActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="et_sdk_kylin"
+                    android:host="et.callback"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.eostoken.opensdk.kylin.KylinAssistActivity"
+            android:exported="true">
+
+        </activity>
+
+    </application>
+
+</manifest>
